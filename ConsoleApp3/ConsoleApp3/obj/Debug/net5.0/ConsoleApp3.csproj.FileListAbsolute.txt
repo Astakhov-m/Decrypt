@@ -14,3 +14,19 @@ C:\Users\Atom\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.
 C:\Users\Atom\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ref\ConsoleApp3.dll
 C:\Users\Atom\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.pdb
 C:\Users\Atom\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.genruntimeconfig.cache
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ConsoleApp3.exe
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ConsoleApp3.deps.json
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ConsoleApp3.runtimeconfig.json
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ConsoleApp3.runtimeconfig.dev.json
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ConsoleApp3.dll
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ref\ConsoleApp3.dll
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ConsoleApp3.pdb
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.csproj.AssemblyReference.cache
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.AssemblyInfoInputs.cache
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.AssemblyInfo.cs
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.dll
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ref\ConsoleApp3.dll
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.pdb
+C:\Users\Atom\source\repos\new_p\New folder\Decrypt\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.genruntimeconfig.cache

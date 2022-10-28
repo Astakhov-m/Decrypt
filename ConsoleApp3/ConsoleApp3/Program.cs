@@ -2,6 +2,8 @@
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Collections.Generic;
+using System.IO;
 
 namespace ConsoleApp3
 {
@@ -25,7 +27,7 @@ namespace ConsoleApp3
             int versionNumber = 1;
 
             int[] byteVersion = new int[4];
-            for(var i = 0; i < 4; i++)
+            for (var i = 0; i < 4; i++)
             {
                 byteVersion[i] = encodeBytesArray[i + 1];
             }
@@ -35,7 +37,7 @@ namespace ConsoleApp3
 
             int byteDestCurentIDLength = encodeBytesArray[DestCurentIDLengthNumber];
             int[] byteDestCurentID = new int[byteDestCurentIDLength];
-            for (var i = 0; i< byteDestCurentIDLength; i++)
+            for (var i = 0; i < byteDestCurentIDLength; i++)
             {
                 byteDestCurentID[i] = encodeBytesArray[DestCurentIDLengthNumber + 1 + i];
             }
@@ -46,7 +48,7 @@ namespace ConsoleApp3
             if (SourceConnectionIDLength > 0)
             {
                 int[] SourceConnectionID = new int[SourceConnectionIDLength];
-                for(var i = 0; i < SourceConnectionIDLength; i++)
+                for (var i = 0; i < SourceConnectionIDLength; i++)
                 {
                     SourceConnectionID[i] = encodeBytesArray[SourceConnectionIDLengthNumber + 1 + i];
                 }
@@ -67,29 +69,27 @@ namespace ConsoleApp3
                 TokenLength = 0;
                 lengthNumber = TokenLengthNumber + 1;
             }
-            int length = (encodeBytesArray[lengthNumber]%16)*256 + encodeBytesArray[lengthNumber + 1];//TODO: 1-st byte of length number != 44
+            int length = (encodeBytesArray[lengthNumber] % 16) * 256 + encodeBytesArray[lengthNumber + 1];//TODO: 1-st byte of length number != 44
 
             int pacetNumberNumber = lengthNumber + 2;
             int pacetNumber = GetPacetNumber(flagInBits[6], flagInBits[7]);
 
             Console.WriteLine(length);
 
-            int[] payload = new int[length-1];
-            for (var i = 0; i < length-1; i++)
+            int[] payload = new int[length - 1];
+            for (var i = 0; i < length - 1; i++)
             {
                 payload[i] = encodeBytesArray[pacetNumberNumber + 1 + i];
             }
             // check sample start pos
             int sampleStartPose = pacetNumberNumber + 4;
             int[] sample = new int[16];
-            for(var i = 0; i < 16; i++)
+            for (var i = 0; i < 16; i++)
             {
                 sample[i] = encodeBytesArray[sampleStartPose + i];
             }
 
-            byte[] headerProtectionMask = Decrypt(sample, GetRijndaelManaged(sample));
 
-            //byte decryptedFlags = ((byte)(byte_public_flag ^ headerProtectionMask[0]) & 0b00001111);
 
             Console.WriteLine(byte_public_flag);
             var initialSecret = extractInitialSecret(byteDestCurentID, byteVersion);
@@ -108,6 +108,11 @@ namespace ConsoleApp3
             Console.WriteLine($"headerProtectionSecret[0] = {headerProtectionSecret[0]}");
 
 
+            byte[] headerProtectionMask = Decrypt(sample, GetRijndaelManaged(sample));
+            byte decryptedFlags = (byte)(byte_public_flag ^ headerProtectionMask[0] & 0b00001111);
+
+            var a = 0;
+
         }
         public static byte[] StringToByteArray(string hex)
         {
@@ -119,12 +124,12 @@ namespace ConsoleApp3
 
         public static int GetPacetNumber(int num1, int num2)
         {//TODO: pacet number bytes != 00
-            if( num1 == num2 && num1 == 0)
+            if (num1 == num2 && num1 == 0)
             {
                 return 1;
             }
-                return 2;
-            
+            return 2;
+
         }
 
         public static int[] FlagToInfo(byte number)
@@ -145,7 +150,7 @@ namespace ConsoleApp3
         public static RijndaelManaged GetRijndaelManaged(int[] secretKey)
         {
             byte[] secretKeyBytes = new byte[secretKey.Length];
-            for(var i = 0; i < secretKey.Length; i++)
+            for (var i = 0; i < secretKey.Length; i++)
             {
                 secretKeyBytes[i] = Convert.ToByte(secretKey[i]);
             }
@@ -165,7 +170,7 @@ namespace ConsoleApp3
         public static byte[] Decrypt(int[] encryptedData, RijndaelManaged rijndaelManaged)
         {
             byte[] data = new byte[encryptedData.Length];
-            for(var i = 0; i < encryptedData.Length; i++)
+            for (var i = 0; i < encryptedData.Length; i++)
             {
                 data[i] = Convert.ToByte(encryptedData[i]);
             }
@@ -212,7 +217,7 @@ namespace ConsoleApp3
             (byte) 0x62, (byte) 0xca, (byte) 0x57, (byte) 0x04, (byte) 0x06, (byte) 0xea, (byte) 0x7a, (byte) 0xe3, (byte) 0xe5, (byte) 0xd3
     };
 
-        public static byte[] extractInitialSecret( int[] byteDestCurentID, int[] byteVersion)
+        public static byte[] extractInitialSecret(int[] byteDestCurentID, int[] byteVersion)
         {
             byte[] initialSecret;
             int version = getIetfDraftVersion(byteVersion);
@@ -243,7 +248,7 @@ namespace ConsoleApp3
                 initialSecret = handshake_salt_v2_draft_00;
             }
             byte[] DESTID = new byte[byteDestCurentID.Length];
-            for( var i = 0; i< byteDestCurentID.Length; i++)
+            for (var i = 0; i < byteDestCurentID.Length; i++)
             {
                 DESTID[i] = (byte)byteDestCurentID[i];
             }
@@ -287,37 +292,103 @@ namespace ConsoleApp3
             return 0;
         }
 
-            static byte[] lableClientSecret = {(byte)0x63, (byte)0x6c, (byte)0x69, (byte)0x65,
+        static byte[] lableClientSecret = {(byte)0x63, (byte)0x6c, (byte)0x69, (byte)0x65,
                     (byte)0x6e, (byte)0x74, (byte)0x20, (byte)0x69, (byte)0x6e};
         static byte[] lableQuic_Key = {(byte)0x71, (byte)0x75, (byte)0x69, (byte)0x63, (byte)0x20,
                     (byte)0x6b, (byte)0x65, (byte)0x79};
         static byte[] lableQUIC_IV =
             new byte[] { (byte)0x71, (byte)0x75, (byte)0x69, (byte)0x63, (byte)0x20, (byte)0x69, (byte)0x76 };
         static byte[] lableQUIC_HP =
-            new byte[]{(byte)0x71, (byte)0x75, (byte)0x69, (byte)0x63, (byte)0x20, (byte)0x68, (byte)0x70};
-    public static byte[] expandInitialClientSecret(byte[] initialSecret)
+            new byte[] { (byte)0x71, (byte)0x75, (byte)0x69, (byte)0x63, (byte)0x20, (byte)0x68, (byte)0x70 };
+        public static byte[] expandInitialClientSecret(byte[] initialSecret)
         {
 
-            return HKDF.Expand(HashAlgorithmName.SHA256, initialSecret, (256 / 8), lableClientSecret);
-            
+            return tlsExpandLabel(HashAlgorithmName.SHA256, initialSecret, (256 / 8), lableClientSecret);
+
         }
 
         public static byte[] expandInitialQuicKey(byte[] initialSecret)
         {
-            return HKDF.Expand(HashAlgorithmName.SHA256,
-                    initialSecret,(128 / 8), lableQuic_Key);
+            return tlsExpandLabel(HashAlgorithmName.SHA256,
+                    initialSecret, (128 / 8), lableQuic_Key);//lableQuic_Key
         }
 
         public static byte[] expandInitialQuicIv(byte[] initialSecret)
         {
-            return HKDF.Expand(HashAlgorithmName.SHA256,
-                    initialSecret, (96 / 8), lableQUIC_IV);
+            return tlsExpandLabel(HashAlgorithmName.SHA256,
+                    initialSecret, (96 / 8), lableQUIC_IV);//lableQUIC_IV
         }
 
         public static byte[] expandInitialHeaderProtection(byte[] initialSecret)
         {
-            return HKDF.Expand(HashAlgorithmName.SHA256,
-                    initialSecret, 16, lableQUIC_HP);
+            return tlsExpandLabel(HashAlgorithmName.SHA256,
+                    initialSecret, 16, lableQUIC_HP);//lableQUIC_HP
+        }
+
+
+        public static byte[] tlsExpandLabel(
+           HashAlgorithmName name,
+           byte[] secret,
+           int length,
+           //byte[] context,
+           byte[] label
+           )
+        {
+            byte[] tlsLabel = tlsCreateLabel(label, length);
+            return HKDF.Expand(name, secret, length, tlsLabel);
+        }
+
+        public static byte[] TLS_1_3_PREFIX =
+            new byte[] { (byte)0x74, (byte)0x6c, (byte)0x73, (byte)0x31, (byte)0x33, (byte)0x20 };
+
+        public static byte[] tlsCreateLabel(byte[] label, int length)
+        {
+
+            var context = new byte[] { };
+
+            MemoryStream stream = new MemoryStream();
+            using (BinaryWriter writer = new BinaryWriter(stream))
+            {
+                writer.Write((short)length);//BitConverter.GetBytes
+                writer.Write((byte)((TLS_1_3_PREFIX.Length + label.Length)));
+                writer.Write(TLS_1_3_PREFIX);
+                writer.Write(label);
+                writer.Write((byte)(context.Length));
+                writer.Write(context);
+            }
+            //byte[] bytes = stream.ToArray();
+
+
+
+
+
+
+
+
+
+
+
+            ////  "Its encoding will include a two-byte
+            ////   actual length field prepended to the vector"
+            //// Quote from TLS-1.3-Spec https://www.rfc-editor.org/rfc/rfc8446.html#section-3.4
+
+            //List<byte> clientLabel = new List<byte>();
+            //clientLabel.Add((byte)(short)length);
+            //clientLabel.Add((byte)(TLS_1_3_PREFIX.Length + label.Length));
+            //foreach (var b in TLS_1_3_PREFIX)
+            //{
+            //    clientLabel.Add(b);
+            //}
+            //foreach (var l in label)
+            //    clientLabel.Add(l);
+            //clientLabel.Add((byte)(context.Length));
+            //foreach (var c in context)
+            //    clientLabel.Add(c);
+            var array = stream.ToArray();
+            var k = array[0];
+            array[0] = array[1];
+            array[1] = k;
+            return array;
         }
     }
 }
