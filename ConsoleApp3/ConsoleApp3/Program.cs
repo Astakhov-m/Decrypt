@@ -15,7 +15,7 @@ namespace ConsoleApp3
         }
         static void InfoFinder()
         {
-            string arg = "c40000000108319486c1391eb98000404600566030209ccd08bf1cda097b469ce675a2ea98056860b2722f6b727c5bdb65e7706d8eca2e61b800087cf7e9ab4851fc76cb55aaf5e0d43a8fe303ea2b998f18e74820e4c944896b74f6a663e0f9f343661c84934f641a9ec4d48fb7ff15d053f128308e85682ea8cb280c2b7c7bd39af5064ac52d628df28fd9cd8bc1c688c07d43c354f73815f648fb5be42108c19e6798a94fdf5e0310e47e005e4c88ff11719dbf9dbcf4c0b3f38423c04a6177a23af91fb535478e4936f95a2872a90013c3d60e94a492cc2490ae7d53bb2eaf2228448396318cfd7dd58375e3352fb2741fe0d62657d3334fb8d1da08de646679b7daf66f613178a25364d0b9cf3cf26b5db6c39059b59eafcaf05bfe5a318a9281fe1e2faac426e752a4d86f7e8ba36d535564f79a625ab95c7d7f376e15b81f02bb5d00c1c8b445a8db0193d9aa16cbda648639669cf029ae69b1b63c623bd05af5f76f57adfb9e55f57a40215e63164923293ad0f121acefd6e6e1c3f04d99f18a900d0ce158da3f51478592db7bbc91408fec73a5a3e33f765baab35ba6f8d18a17ac7922c5cc17d866fe34d1fea899551daf1ae3e4da5dae326583802cadab8cfdf6c0e15c67361db8b78600bfba42a5624a2479a26a619605314d8e3fc44626e861501910a86ccb9787c15de4de8b6a56608c0e94b057fb2c2014b435abaa93537329b3037b4d0cefee859f11d4ed2794a6f5b5caf32c80f8a436cbc126ff5081e8ad7394e558e4fc36d087c81f92fe8f2fddd6cab8f0297a84c916b7afed72228d9474c392dd591724b4e4567e89d8507e124ca69df3a1a517ab6e138e9e2b7041480af4513032a74203527b77c2e11e21bf32d2d0a5ee86e463f43fe62f8fb377dea1b9b256b418d2cbbe1c05454a7962c9fe510fb9dab8db126b27af986ea06e2a6bc6f9d621e2fc37617a8a506f036e61c305dd16f84d97dddeafe049465a0a2cc14fa03901ad782613fcf9900c9e9fd18021d5a3cb78c777af537c26a93f3fc48b3f6c352e97362b4b6d99923675c6b89ed67150359ca47ebc66bd0d52abb65b4f00700adaa07b37c1f0f1f1d270dfd49a4130f442743d283eb67e539e8bcb26d45eb8b2e901d41fb6e1600f323c5714f6da19182f59da9db9f39dfec1ccee162422f991be6514f2ae5c57a74786eb32ee61c8ba0b1faa2de7e3d6167102c69329c8beefa69debea7eb2089d56c72ca0753f026b307fe08d94960541931c0c318cf25a1fade60be2e279cf20861eab1b1690e70c01c428803a22440785f8088869e6f316bcc361786b118d3363b5acc9c40de4ce935ec7b2768c504709036160640d7abe2df75af127a70e0882aa30517d58668d3d527d161cc6a89000c4d4a6f2b98f282baf0707fbb67a09322fc923258149981597616008f4934f312b35d04f838f74f77ffd10451aa9c6ce31cf6d23b2f3ef0b6994c89ded06ace6358c7fc484321d024eb32fb28a07246aafc58005fa3c8107dff0530ad6cc92ffbf5c042f0e9e6433c37c8b2f9a8be3e2f86c20c8783b76470693bc37f460c40ba8b08417d2a15080f6cb8aa73836141e786e28d25eaf4ea0ee36c344a629f3a38da8f1e5233b0cccf1ca08492e976a91ae859ac3d09869957815ae42224a2b09e83fb7ddf3f72d8558809ea0a6a7932443c59bf07df755701a8099216d1e6f8b84495d75453ef4d5a4b91ee0a7eba2bf81afa887c00580872e6dd11eacb1";
+            string arg = "ce0000000108350dce7aa59f6058000044d01127cff2decab2ad37df69b115631668fc919e522b9ff37eaa64299c2b7fcabfbfa322b44d33c5810998e2078ed2b0acdd47cded3ae5f2e5ee8dc901865432e56d6bfa9ed42e0be4b0e4fdde1e35200d087b19dfaea75fed0693eb510321839dd256234a61d7d94759d9f1017db592530885c3e45295615724cef85a34a0d2f714d2d84c8af8cb4862e2bb840cb52e95b62b5e41e5ecf3e17b70a3f3e4c9b0d02f1aaf746347af8e7cdbf2e6d1b7ea1d88f5c5165197ab9aa5590c732210793cb6d6ea202fa16902d998a36723604ed254fddc86530d24f344b18eb1cc687c08930403fc4e25445bb63890e158d85d78d5e3b094f00665c86f940aed64de16020a92f1cbd5bc174530f19905d69bd53ed85fee3526f75216541614c2712c1bfd3546e3f015229e830a15f8e4d6cadb68b5192e13bbc9cd0c81f417f3532644580e678d9ffb007775c4c1fbeffd53f3d682c0c55de4b2c26821ee794fed5b6065e427d8270d07c42d3ba0336aedb28754a6580b703fe6588ae4c36e961c3323d14bcd7130973b0e9de446062b6d73df0bdfeab8b9aef32c29c24e6afc4f868121c44fa389027f510824d0033e8dfb6fc0b10246e2b7045fe5719e1ca7f9987a85f02e98291718c8fef98480258b3ba806d09c762982be1f5b86e56c423c00277cb922c349fe8d0c8f743ba6ea2e8a0a42097c18484036f74bf50deec0bce43afc92b0362e188003754348b336286d91cb2f33efd5d28ca02140bf87fc37b0a23c9c3f75d3b1c2e8950f5edafbf8a0a5f7357b7cf3df6a812d8f88aaa8e9bd5b2348e8334a1099cfb79eeb9d9ccd416548052acd99c29700c74d15c2f33184764be97b496d9ea5e4aae9d527adac929fea7402497b622acc4e248883f8f3d867952967099bb8d1d12d0ccd663f7ffc44c08a1ffd5e8be1ea5d0e2881b376056f1c9ff279d904d3ed620baf902bd79026262b6d69b737edde73e5ab4442aa4cd95fbf55d49fca6cc503a2758441076260d50ee9f51eff7e370614ce996df6112da18b311f8ace1b4f5987a41931df09b2bd23cf35432b0cccabb674829324fae251647c5eb21b1de1346c2976368af1fa54e02fe58e2f10b917496981ca391627937c4631a29b13448d3b6a495feb184220c50b5bd3907cb944a84710b3f32b882104233d6e8ec084a3eaa9ad9692a59deca5c3a5dbefd9166d52e473430cfdf6bfdbe00df9ffc786987ebacc8744068779c3a4feec9aa4cc12be76188469a3261ba44e162e983694c58adc0f33253b868a8087a2a14484d4c67b90d2d469ab1c82d1ff117f45c0419a69708413f06d1b47583fcb3422e069090003d8a26632fb44e9772a6a393b284c19f9ae8733fa5e6e0430a632ee77beff55d7da83d37b5f21a49e388bccc0afa8dbfa30477e9786ef7cb108ef32ecf3e5c3b9369ba66f45da79e7849f6b8c9e3dfd3f605ba7980181fb90156b527484cb4e26e5b118bc83f330f0dfa8c27e3b634aa4f9ffa2bacfcea3bb525a2113e3d303d47f856015db06545aee54c2a0037513013982e9572de8c98f600c502d18dbe248414b4e2be195a503565ec4bebb432e9f0b869ad58fcb0354a3c0d767898d750e235bcc8acbe5f918067d10851f71cac79c5b0f703bb796cd3b2ec5d15da1b5421c3ed0fd2c60fb59b84ebb22a1fbf1d9fb856536f1f5f2688df96359f523715224d6024a4cf46a99150d0cfa10d0c558bc56964d067a";
             byte[] encodeBytesArray = StringToByteArray(arg);
             const int flagByteNumber = 0;
 
@@ -70,7 +70,7 @@ namespace ConsoleApp3
             int length = (encodeBytesArray[lengthNumber]%16)*256 + encodeBytesArray[lengthNumber + 1];//TODO: 1-st byte of length number != 44
 
             int pacetNumberNumber = lengthNumber + 2;
-            //int pacetNumber = GetPacetNumber(flagInBits[6], flagInBits[7]);
+            int pacetNumber = GetPacetNumber(flagInBits[6], flagInBits[7]);
 
             Console.WriteLine(length);
 
@@ -80,22 +80,32 @@ namespace ConsoleApp3
                 payload[i] = encodeBytesArray[pacetNumberNumber + 1 + i];
             }
             // check sample start pos
-            int sampleStartPose = pacetNumberNumber + 5;
+            int sampleStartPose = pacetNumberNumber + 4;
             int[] sample = new int[16];
             for(var i = 0; i < 16; i++)
             {
                 sample[i] = encodeBytesArray[sampleStartPose + i];
             }
-            Console.WriteLine(sample[0]);
-            Console.WriteLine(sample[15]);
 
-            var decryptedData = Decrypt(sample, GetRijndaelManaged(sample));
-            for(var i = 0; i < sample.Length; i++)
-            {
-                Console.Write(sample[i]);
-                Console.Write(" | ");
-                Console.WriteLine(decryptedData[i]);
-            }
+            byte[] headerProtectionMask = Decrypt(sample, GetRijndaelManaged(sample));
+
+            //byte decryptedFlags = ((byte)(byte_public_flag ^ headerProtectionMask[0]) & 0b00001111);
+
+            Console.WriteLine(byte_public_flag);
+            var initialSecret = extractInitialSecret(byteDestCurentID, byteVersion);
+            //Console.WriteLine(extractInitialSecret(byteDestCurentID, byteVersion));
+
+            var clientSecret = expandInitialClientSecret(initialSecret);
+            Console.WriteLine($"clientSecret[0] = {clientSecret[0]}");
+
+            var clientInitialKey = expandInitialQuicKey(clientSecret);
+            Console.WriteLine($"InitialQuicKey[0] = {clientInitialKey[0]}");
+
+            var clientInitialIV = expandInitialQuicIv(clientSecret);
+            Console.WriteLine($"clientInitialIV[0] = {clientInitialIV[0]}");
+
+            var headerProtectionSecret = expandInitialHeaderProtection(clientSecret);
+            Console.WriteLine($"headerProtectionSecret[0] = {headerProtectionSecret[0]}");
 
 
         }
@@ -107,15 +117,15 @@ namespace ConsoleApp3
                              .ToArray();
         }
 
-        //public static int GetPacetNumber(int num1, int num2)
-        //{//TODO: pacet number bytes != 00
-        //    if( num1 == num2 && num1 == 0)
-        //    {
-        //        return 1;
-        //    }
-        //        return 2;
+        public static int GetPacetNumber(int num1, int num2)
+        {//TODO: pacet number bytes != 00
+            if( num1 == num2 && num1 == 0)
+            {
+                return 1;
+            }
+                return 2;
             
-        //}
+        }
 
         public static int[] FlagToInfo(byte number)
         {
@@ -152,12 +162,6 @@ namespace ConsoleApp3
             };
         }
 
-        //public byte[] Encrypt(byte[] plainBytes, RijndaelManaged rijndaelManaged)
-        //{
-        //    return rijndaelManaged.CreateEncryptor()
-        //        .TransformFinalBlock(plainBytes, 0, plainBytes.Length);
-        //}
-
         public static byte[] Decrypt(int[] encryptedData, RijndaelManaged rijndaelManaged)
         {
             byte[] data = new byte[encryptedData.Length];
@@ -170,20 +174,150 @@ namespace ConsoleApp3
         }
 
 
-        // Encrypts plaintext using AES 128bit key and a Chain Block Cipher and returns a base64 encoded string
-
-        //public String Encrypt(String plainText, String key)
-        //{
-        //    var plainBytes = Encoding.UTF8.GetBytes(plainText);
-        //    return Convert.ToBase64String(Encrypt(plainBytes, GetRijndaelManaged(key)));
-        //}
 
 
-        //public String Decrypt(String encryptedText, String key)
-        //{
-        //    var encryptedBytes = Convert.FromBase64String(encryptedText);
-        //    return Encoding.UTF8.GetString(Decrypt(encryptedBytes, GetRijndaelManaged(key)));
-        //}
 
+
+
+
+        public static byte[] INITIAL_SALT_v1 = new byte[]{
+            (byte) 0x38, (byte) 0x76, (byte) 0x2c, (byte) 0xf7, (byte) 0xf5, (byte) 0x59, (byte) 0x34, (byte) 0xb3, (byte) 0x4d, (byte) 0x17, (byte) 0x9a, (byte) 0xe6, (byte) 0xa4, (byte) 0xc8, (byte) 0x0c, (byte) 0xad, (byte) 0xcc, (byte) 0xbb, (byte) 0x7f, (byte) 0x0a
+
+    };
+        public static byte[] handshake_salt_draft_23 = new byte[]{
+            (byte) 0xc3, (byte) 0xee, (byte) 0xf7, (byte) 0x12, (byte) 0xc7, (byte) 0x2e, (byte) 0xbb, (byte) 0x5a, (byte) 0x11, (byte) 0xa7, (byte) 0xd2, (byte) 0x43, (byte) 0x2b, (byte) 0xb4, (byte) 0x63, (byte) 0x65, (byte) 0xbe, (byte) 0xf9, (byte) 0xf5, (byte) 0x02,
+    };
+        public static byte[] handshake_salt_draft_22 = new byte[]{
+            (byte) 0x7f, (byte) 0xbc, (byte) 0xdb, (byte) 0x0e, (byte) 0x7c, (byte) 0x66, (byte) 0xbb, (byte) 0xe9, (byte) 0x19, (byte) 0x3a,
+            (byte) 0x96, (byte) 0xcd, (byte) 0x21, (byte) 0x51, (byte) 0x9e, (byte) 0xbd, (byte) 0x7a, (byte) 0x02, (byte) 0x64, (byte) 0x4a
+    };
+        public static byte[] handshake_salt_draft_29 = new byte[]{
+            (byte) 0xaf, (byte) 0xbf, (byte) 0xec, (byte) 0x28, (byte) 0x99, (byte) 0x93, (byte) 0xd2, (byte) 0x4c, (byte) 0x9e, (byte) 0x97,
+            (byte) 0x86, (byte) 0xf1, (byte) 0x9c, (byte) 0x61, (byte) 0x11, (byte) 0xe0, (byte) 0x43, (byte) 0x90, (byte) 0xa8, (byte) 0x99
+    };
+        public static byte[] hanshake_salt_draft_q50 = new byte[]{
+            (byte) 0x50, (byte) 0x45, (byte) 0x74, (byte) 0xEF, (byte) 0xD0, (byte) 0x66, (byte) 0xFE, (byte) 0x2F, (byte) 0x9D, (byte) 0x94,
+            (byte) 0x5C, (byte) 0xFC, (byte) 0xDB, (byte) 0xD3, (byte) 0xA7, (byte) 0xF0, (byte) 0xD3, (byte) 0xB5, (byte) 0x6B, (byte) 0x45
+    };
+        public static byte[] hanshake_salt_draft_t50 = new byte[]{
+            (byte) 0x7f, (byte) 0xf5, (byte) 0x79, (byte) 0xe5, (byte) 0xac, (byte) 0xd0, (byte) 0x72, (byte) 0x91, (byte) 0x55, (byte) 0x80,
+            (byte) 0x30, (byte) 0x4c, (byte) 0x43, (byte) 0xa2, (byte) 0x36, (byte) 0x7c, (byte) 0x60, (byte) 0x48, (byte) 0x83, (byte) 0x10
+    };
+        public static byte[] hanshake_salt_draft_t51 = new byte[]{
+            (byte) 0x7a, (byte) 0x4e, (byte) 0xde, (byte) 0xf4, (byte) 0xe7, (byte) 0xcc, (byte) 0xee, (byte) 0x5f, (byte) 0xa4, (byte) 0x50,
+            (byte) 0x6c, (byte) 0x19, (byte) 0x12, (byte) 0x4f, (byte) 0xc8, (byte) 0xcc, (byte) 0xda, (byte) 0x6e, (byte) 0x03, (byte) 0x3d
+    };
+        public static byte[] handshake_salt_v2_draft_00 = new byte[]{
+            (byte) 0xa7, (byte) 0x07, (byte) 0xc2, (byte) 0x03, (byte) 0xa5, (byte) 0x9b, (byte) 0x47, (byte) 0x18, (byte) 0x4a, (byte) 0x1d,
+            (byte) 0x62, (byte) 0xca, (byte) 0x57, (byte) 0x04, (byte) 0x06, (byte) 0xea, (byte) 0x7a, (byte) 0xe3, (byte) 0xe5, (byte) 0xd3
+    };
+
+        public static byte[] extractInitialSecret( int[] byteDestCurentID, int[] byteVersion)
+        {
+            byte[] initialSecret;
+            int version = getIetfDraftVersion(byteVersion);
+            if (version == 0x51303530)
+                initialSecret = hanshake_salt_draft_q50;
+            else if (version == 0x54303531)
+            {
+                initialSecret = hanshake_salt_draft_t51;
+            }
+            else if (version <= 22)
+            {
+                initialSecret = handshake_salt_draft_22;
+            }
+            else if (version <= 28)
+            {
+                initialSecret = handshake_salt_draft_23;
+            }
+            else if (version <= 32)
+            {
+                initialSecret = handshake_salt_draft_29;
+            }
+            else if (version <= 34)
+            {
+                initialSecret = INITIAL_SALT_v1;
+            }
+            else
+            {
+                initialSecret = handshake_salt_v2_draft_00;
+            }
+            byte[] DESTID = new byte[byteDestCurentID.Length];
+            for( var i = 0; i< byteDestCurentID.Length; i++)
+            {
+                DESTID[i] = (byte)byteDestCurentID[i];
+            }
+
+            return HKDF.Extract(HashAlgorithmName.SHA256, DESTID, initialSecret);
+        }
+
+        public static int getIetfDraftVersion(int[] versionArray)
+        {
+            int version = versionArray[3] + versionArray[2] * 16 + versionArray[1] * 16 * 16 + versionArray[0] * 16 * 16 * 16;
+            if (version >> 8 == 0xff0000)
+            {
+                return version;
+            }
+            if (version == 0xfaceb001)
+            {
+                return 22;
+            }
+            if (version == 0xfaceb002 || version == 0xfaceb00e)
+            {
+                return 27;
+            }
+            if (version == 0x51303530 ||
+                version == 0x54303530 ||
+                version == 0x54303531)
+            {
+                return 27;
+            }
+            if ((version & 0x0F0F0F0F) == 0x0a0a0a0a)
+            {
+                return 29;
+            }
+            if (version == 0x00000001)
+            {
+                return 34;
+            }
+            if (version == 0x709A50C4)
+            {
+                return 100;
+            }
+            return 0;
+        }
+
+            static byte[] lableClientSecret = {(byte)0x63, (byte)0x6c, (byte)0x69, (byte)0x65,
+                    (byte)0x6e, (byte)0x74, (byte)0x20, (byte)0x69, (byte)0x6e};
+        static byte[] lableQuic_Key = {(byte)0x71, (byte)0x75, (byte)0x69, (byte)0x63, (byte)0x20,
+                    (byte)0x6b, (byte)0x65, (byte)0x79};
+        static byte[] lableQUIC_IV =
+            new byte[] { (byte)0x71, (byte)0x75, (byte)0x69, (byte)0x63, (byte)0x20, (byte)0x69, (byte)0x76 };
+        static byte[] lableQUIC_HP =
+            new byte[]{(byte)0x71, (byte)0x75, (byte)0x69, (byte)0x63, (byte)0x20, (byte)0x68, (byte)0x70};
+    public static byte[] expandInitialClientSecret(byte[] initialSecret)
+        {
+
+            return HKDF.Expand(HashAlgorithmName.SHA256, initialSecret, (256 / 8), lableClientSecret);
+            
+        }
+
+        public static byte[] expandInitialQuicKey(byte[] initialSecret)
+        {
+            return HKDF.Expand(HashAlgorithmName.SHA256,
+                    initialSecret,(128 / 8), lableQuic_Key);
+        }
+
+        public static byte[] expandInitialQuicIv(byte[] initialSecret)
+        {
+            return HKDF.Expand(HashAlgorithmName.SHA256,
+                    initialSecret, (96 / 8), lableQUIC_IV);
+        }
+
+        public static byte[] expandInitialHeaderProtection(byte[] initialSecret)
+        {
+            return HKDF.Expand(HashAlgorithmName.SHA256,
+                    initialSecret, 16, lableQUIC_HP);
+        }
     }
 }
