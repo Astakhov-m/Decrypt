@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ky5Z0whfxPu7+FHAlnRP79TwfRb3V6rU3gsS6CD/wLqetElbhtbefOW0gCjEh4WdlAzdEZF7XnSeyeSwoiZtpA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Atom\\source\\repos\\new_p\\Decrypt\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Atom\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
